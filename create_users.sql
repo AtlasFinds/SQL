@@ -1,14 +1,8 @@
-prompt>Dropping users
+-- Dropping users
 DROP USER ap CASCADE;
-DROP USER ex CASCADE;
-DROP USER om CASCADE;
 
-prompt>Creating users
+-- Creating users
 CREATE USER ap IDENTIFIED BY ap DEFAULT TABLESPACE users;
-CREATE USER ex IDENTIFIED BY ex DEFAULT TABLESPACE users;
-CREATE USER om IDENTIFIED BY om DEFAULT TABLESPACE users;
 
-prompt>Granting privileges
+-- Granting privileges
 GRANT ALL PRIVILEGES TO ap;
-GRANT ALL PRIVILEGES TO ex;
-GRANT ALL PRIVILEGES TO om;
